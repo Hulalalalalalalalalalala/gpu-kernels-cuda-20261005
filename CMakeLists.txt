@@ -18,4 +18,12 @@ endforeach()
 add_test(NAME vectorAdd_gpu COMMAND vectorAdd)
 add_test(NAME matrixMul_gpu COMMAND matrixMul -wA=128 -hA=128 -wB=128 -hB=128)
 add_test(NAME reduction_gpu COMMAND reduction --n=65536)
-set_tests_properties(vectorAdd_gpu matrixMul_gpu reduction_gpu PROPERTIES RUN_SERIAL TRUE)
+# tail chunk (16963 elements, not a multiple of 256) and two rounds
+add_test(NAME simpleStreams_gpu COMMAND simpleStreams --n=1000003 --chunk=65536 --streams=4 --repeat=2)
+# n smaller than chunk and fewer chunks than streams
+add_test(NAME simpleStreams_small_gpu COMMAND simpleStreams --n=1000 --chunk=1048576 --streams=8)
+# invalid parameter values must fail before any GPU compute
+add_test(NAME simpleStreams_bad_n COMMAND simpleStreams --n=0)
+add_test(NAME simpleStreams_bad_limit COMMAND simpleStreams --chunk=16777216 --streams=8)
+set_tests_properties(simpleStreams_bad_n simpleStreams_bad_limit PROPERTIES WILL_FAIL TRUE)
+set_tests_properties(vectorAdd_gpu matrixMul_gpu reduction_gpu simpleStreams_gpu simpleStreams_small_gpu PROPERTIES RUN_SERIAL TRUE)

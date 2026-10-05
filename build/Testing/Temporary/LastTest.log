@@ -1,0 +1,160 @@
+Start testing: Oct 05 18:23 CST
+----------------------------------------------------------
+1/7 Testing: vectorAdd_gpu
+1/7 Test: vectorAdd_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/vectorAdd"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"vectorAdd_gpu" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+Unified Memory: CPU and GPU answers match
+<end of output>
+Test time =   0.52 sec
+----------------------------------------------------------
+Test Passed.
+"vectorAdd_gpu" end time: Oct 05 18:23 CST
+"vectorAdd_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: matrixMul_gpu
+2/7 Test: matrixMul_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/matrixMul" "-wA=128" "-hA=128" "-wB=128" "-hB=128"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"matrixMul_gpu" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+MatrixA(128,128), MatrixB(128,128)
+Computing result using CUDA Kernel...
+done
+Performance= 279.62 GFlop/s, Time= 0.015 msec, Size= 4194304 Ops, WorkgroupSize= 1024 threads/block
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+<end of output>
+Test time =   0.82 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_gpu" end time: Oct 05 18:23 CST
+"matrixMul_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: reduction_gpu
+3/7 Test: reduction_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/reduction" "--n=65536"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"reduction_gpu" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/reduction Starting...
+
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+Using Device 0: NVIDIA GeForce RTX 5080 Laptop GPU
+
+Reducing array of type int
+
+65536 elements
+256 threads (max)
+64 blocks
+
+Reduction, Throughput = 2.7145 GB/s, Time = 0.00010 s, Size = 65536 Elements, NumDevsUsed = 1, Workgroup = 256
+
+GPU result = 8374433
+CPU result = 8374433
+
+Test passed
+<end of output>
+Test time =   0.92 sec
+----------------------------------------------------------
+Test Passed.
+"reduction_gpu" end time: Oct 05 18:23 CST
+"reduction_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/7 Testing: simpleStreams_gpu
+4/7 Test: simpleStreams_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--n=1000003" "--chunk=65536" "--streams=4" "--repeat=2"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"simpleStreams_gpu" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+[ CUDA Sample: Streams ]
+
+GPU Device 0: with compute capability 12.0 and Number of SMs 60
+
+n=1000003 chunk=65536 streams=4 repeat=2
+
+Round 0 Single stream: 1000003 elements PASS (16.812 ms)
+Round 0 Multi-stream: 1000003 elements PASS (6.917 ms)
+Round 0 Speedup: 2.43x
+Round 1 Single stream: 1000003 elements PASS (7.117 ms)
+Round 1 Multi-stream: 1000003 elements PASS (3.767 ms)
+Round 1 Speedup: 1.89x
+<end of output>
+Test time =   0.66 sec
+----------------------------------------------------------
+Test Passed.
+"simpleStreams_gpu" end time: Oct 05 18:23 CST
+"simpleStreams_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/7 Testing: simpleStreams_small_gpu
+5/7 Test: simpleStreams_small_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--n=1000" "--chunk=1048576" "--streams=8"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"simpleStreams_small_gpu" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+[ CUDA Sample: Streams ]
+
+GPU Device 0: with compute capability 12.0 and Number of SMs 60
+
+n=1000 chunk=1048576 streams=8 repeat=1
+
+Round 0 Single stream: 1000 elements PASS (0.864 ms)
+Round 0 Multi-stream: 1000 elements PASS (0.307 ms)
+Round 0 Speedup: 2.82x
+<end of output>
+Test time =   0.43 sec
+----------------------------------------------------------
+Test Passed.
+"simpleStreams_small_gpu" end time: Oct 05 18:23 CST
+"simpleStreams_small_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/7 Testing: simpleStreams_bad_n
+6/7 Test: simpleStreams_bad_n
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--n=0"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"simpleStreams_bad_n" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+Error: --n=0 is out of range [1, 1073741824]
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"simpleStreams_bad_n" end time: Oct 05 18:23 CST
+"simpleStreams_bad_n" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/7 Testing: simpleStreams_bad_limit
+7/7 Test: simpleStreams_bad_limit
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--chunk=16777216" "--streams=8"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+"simpleStreams_bad_limit" start time: Oct 05 18:23 CST
+Output:
+----------------------------------------------------------
+Error: 8*chunk*streams = 1073741824 bytes exceeds the 512 MiB device buffer limit; reduce --chunk or --streams
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"simpleStreams_bad_limit" end time: Oct 05 18:23 CST
+"simpleStreams_bad_limit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 05 18:23 CST

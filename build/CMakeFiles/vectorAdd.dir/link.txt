@@ -1,0 +1,1 @@
+/usr/bin/g++ -Wl,--dependency-file=CMakeFiles/vectorAdd.dir/link.d @CMakeFiles/vectorAdd.dir/objects1.rsp -o vectorAdd @CMakeFiles/vectorAdd.dir/linkLibs.rsp -L"/home/sl_chen/.local/cuda-13.2.2/lib64/stubs" -L"/home/sl_chen/.local/cuda-13.2.2/lib64"
