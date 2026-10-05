@@ -90,10 +90,25 @@ See the [top-level README](../../../README.md#building-cuda-samples) for full bu
 ## How to Run
 
 ```bash
-./simpleStreams
+./simpleStreams [--n=<N>] [--chunk=<N>] [--streams=<N>] [--repeat=<N>]
 ```
 
-No arguments needed.
+No arguments needed. Every argument uses the `--name=<decimal integer>` form:
+
+| Argument | Meaning | Range | Default |
+|---|---|---|---|
+| `--n` | number of float elements to process | 1 .. 1073741824 | 16777216 |
+| `--chunk` | maximum elements processed per chunk | 1 .. 16777216 | 1048576 |
+| `--streams` | streams used by the multi-stream mode | 1 .. 16 | 4 |
+| `--repeat` | number of repetitions (rounds) | 1 .. 100 | 1 |
+
+The array is processed one chunk at a time, so `n` can far exceed the working
+buffers. In round `r` (0-based) the element at global index `i` is
+`float(i+r)`; both modes square every one of the `n` elements exactly once,
+including non-multiple-of-256 tail chunks, and each result is checked on the
+CPU against the float-rounded square. Device and pinned host working buffers
+are bounded by `8*chunk*streams` bytes each (device total at most 512 MiB),
+independent of `n` and `repeat`.
 
 ## Expected Output
 
@@ -101,10 +116,12 @@ No arguments needed.
 [ CUDA Sample: Streams ]
 
 GPU Device 0: with compute capability X.Y and Number of SMs <smCount>
+n=16777216 chunk=1048576 streams=4 repeat=1
 
-Single stream = 8.243 ms
-Multi-stream  = 3.167 ms
-Speedup       = 2.60x
+Round 0
+  Single stream = 16777216 elements, PASS, 8.243 ms
+  Multi-stream  = 16777216 elements, PASS, 3.167 ms
+  Speedup       = 2.60x
 ```
 
 **Reading the numbers:**

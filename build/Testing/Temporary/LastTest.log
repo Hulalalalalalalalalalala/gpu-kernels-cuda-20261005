@@ -1,0 +1,102 @@
+Start testing: Oct 05 20:50 CST
+----------------------------------------------------------
+1/4 Testing: vectorAdd_gpu
+1/4 Test: vectorAdd_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build/vectorAdd"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build
+"vectorAdd_gpu" start time: Oct 05 20:50 CST
+Output:
+----------------------------------------------------------
+Unified Memory: CPU and GPU answers match
+<end of output>
+Test time =   0.71 sec
+----------------------------------------------------------
+Test Passed.
+"vectorAdd_gpu" end time: Oct 05 20:50 CST
+"vectorAdd_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: matrixMul_gpu
+2/4 Test: matrixMul_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build/matrixMul" "-wA=128" "-hA=128" "-wB=128" "-hB=128"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build
+"matrixMul_gpu" start time: Oct 05 20:50 CST
+Output:
+----------------------------------------------------------
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+MatrixA(128,128), MatrixB(128,128)
+Computing result using CUDA Kernel...
+done
+Performance= 268.14 GFlop/s, Time= 0.016 msec, Size= 4194304 Ops, WorkgroupSize= 1024 threads/block
+Checking computed result for correctness: Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+<end of output>
+Test time =   0.76 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_gpu" end time: Oct 05 20:50 CST
+"matrixMul_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: reduction_gpu
+3/4 Test: reduction_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build/reduction" "--n=65536"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build
+"reduction_gpu" start time: Oct 05 20:50 CST
+Output:
+----------------------------------------------------------
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build/reduction Starting...
+
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+Using Device 0: NVIDIA GeForce RTX 5080 Laptop GPU
+
+Reducing array of type int
+
+65536 elements
+256 threads (max)
+64 blocks
+
+Reduction, Throughput = 1.2538 GB/s, Time = 0.00021 s, Size = 65536 Elements, NumDevsUsed = 1, Workgroup = 256
+
+GPU result = 8374433
+CPU result = 8374433
+
+Test passed
+<end of output>
+Test time =   0.72 sec
+----------------------------------------------------------
+Test Passed.
+"reduction_gpu" end time: Oct 05 20:50 CST
+"reduction_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: simpleStreams_gpu
+4/4 Test: simpleStreams_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build/simpleStreams"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build
+"simpleStreams_gpu" start time: Oct 05 20:50 CST
+Output:
+----------------------------------------------------------
+[ CUDA Sample: Streams ]
+
+GPU Device 0: with compute capability 12.0 and Number of SMs 60
+n=16777216 chunk=1048576 streams=4 repeat=1
+
+Round 0
+  Single stream = 16777216 elements, PASS, 75.433 ms
+  Multi-stream  = 16777216 elements, PASS, 59.915 ms
+  Speedup       = 1.26x
+
+<end of output>
+Test time =   0.72 sec
+----------------------------------------------------------
+Test Passed.
+"simpleStreams_gpu" end time: Oct 05 20:50 CST
+"simpleStreams_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 05 20:50 CST

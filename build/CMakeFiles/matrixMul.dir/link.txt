@@ -1,0 +1,1 @@
+/usr/bin/g++ -Wl,--dependency-file=CMakeFiles/matrixMul.dir/link.d @CMakeFiles/matrixMul.dir/objects1.rsp -o matrixMul @CMakeFiles/matrixMul.dir/linkLibs.rsp -L"/home/sl_chen/.local/cuda-13.2.2/lib64/stubs" -L"/home/sl_chen/.local/cuda-13.2.2/lib64"

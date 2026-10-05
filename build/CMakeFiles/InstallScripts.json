@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task001/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

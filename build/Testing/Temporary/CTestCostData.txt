@@ -1,0 +1,5 @@
+vectorAdd_gpu 2 0.356851
+matrixMul_gpu 2 0.381666
+reduction_gpu 2 0.361999
+simpleStreams_gpu 2 0.36051
+---
