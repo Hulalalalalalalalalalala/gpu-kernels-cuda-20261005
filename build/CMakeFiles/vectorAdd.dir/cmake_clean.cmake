@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/vectorAdd.dir/link.d"
   "CMakeFiles/vectorAdd.dir/cpp/0_Introduction/vectorAdd/vectorAdd.cu.o"
   "CMakeFiles/vectorAdd.dir/cpp/0_Introduction/vectorAdd/vectorAdd.cu.o.d"
   "vectorAdd"

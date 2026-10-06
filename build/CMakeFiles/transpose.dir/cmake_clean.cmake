@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/transpose.dir/link.d"
   "CMakeFiles/transpose.dir/cpp/6_Performance/transpose/transpose.cu.o"
   "CMakeFiles/transpose.dir/cpp/6_Performance/transpose/transpose.cu.o.d"
   "transpose"

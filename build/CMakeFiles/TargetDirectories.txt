@@ -1,8 +1,8 @@
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/vectorAdd.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/matrixMul.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/simpleStreams.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/reduction.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/transpose.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/test.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/edit_cache.dir
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/rebuild_cache.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/vectorAdd.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/matrixMul.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/simpleStreams.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/reduction.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/transpose.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/test.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/edit_cache.dir
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/rebuild_cache.dir

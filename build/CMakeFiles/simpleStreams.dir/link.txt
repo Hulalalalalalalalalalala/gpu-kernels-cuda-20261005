@@ -1,1 +1,1 @@
-/usr/bin/g++ -Wl,--dependency-file=CMakeFiles/simpleStreams.dir/link.d @CMakeFiles/simpleStreams.dir/objects1.rsp -o simpleStreams @CMakeFiles/simpleStreams.dir/linkLibs.rsp -L"/home/sl_chen/.local/cuda-13.2.2/lib64/stubs" -L"/home/sl_chen/.local/cuda-13.2.2/lib64"
+/usr/bin/g++ @CMakeFiles/simpleStreams.dir/objects1.rsp -o simpleStreams @CMakeFiles/simpleStreams.dir/linkLibs.rsp -L"/home/sl_chen/.local/cuda-13.2.2/lib64/stubs" -L"/home/sl_chen/.local/cuda-13.2.2/lib64"

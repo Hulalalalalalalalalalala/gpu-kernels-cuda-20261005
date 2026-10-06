@@ -1,5 +1,5 @@
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o: \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp \
  /usr/include/stdc-predef.h \
  /home/sl_chen/.local/cuda-13.2.2/include/cuda_runtime.h \
  /home/sl_chen/.local/cuda-13.2.2/include/crt/host_config.h \
@@ -100,7 +100,7 @@ CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o
  /usr/include/c++/15/bits/std_abs.h \
  /usr/include/c++/15/pstl/glue_algorithm_defs.h \
  /usr/include/c++/15/pstl/execution_defs.h \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_cuda.h \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common/helper_cuda.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -116,7 +116,7 @@ CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/15/stdlib.h /usr/include/string.h \
  /usr/include/strings.h \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_string.h \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common/helper_string.h \
  /usr/include/c++/15/fstream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/istream /usr/include/c++/15/ios \
  /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
@@ -202,9 +202,9 @@ CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_functions.h \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common/helper_functions.h \
  /usr/include/assert.h \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/exception.h \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common/exception.h \
  /usr/include/c++/15/iostream /usr/include/c++/15/sstream \
  /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/math.h \
  /usr/include/c++/15/cmath /usr/include/math.h \
@@ -235,7 +235,7 @@ CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o
  /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
  /usr/include/c++/15/bits/vector.tcc \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_image.h \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_timer.h \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common/helper_image.h \
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common/helper_timer.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/15/ctime \
- /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction.h
+ /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction.h

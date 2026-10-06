@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/matrixMul.dir/link.d"
   "CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o"
   "CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o.d"
   "matrixMul"

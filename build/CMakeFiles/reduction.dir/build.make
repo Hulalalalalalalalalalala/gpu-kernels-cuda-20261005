@@ -53,10 +53,10 @@ RM = /home/sl_chen/.local/share/uv/tools/cmake/lib/python3.12/site-packages/cmak
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001
+CMAKE_SOURCE_DIR = /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
+CMAKE_BINARY_DIR = /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/reduction.dir/depend.make
@@ -73,25 +73,25 @@ CMakeFiles/reduction.dir/codegen:
 .PHONY : CMakeFiles/reduction.dir/codegen
 
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o: CMakeFiles/reduction.dir/flags.make
-CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp
+CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o: /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o: CMakeFiles/reduction.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o -MF CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o.d -o CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o -c /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o -MF CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o.d -o CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.o -c /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp
 
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp > CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp > CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.i
 
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp -o CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp -o CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction.cpp.s
 
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o: CMakeFiles/reduction.dir/flags.make
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o: CMakeFiles/reduction.dir/includes_CUDA.rsp
-CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu
+CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o: /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o: CMakeFiles/reduction.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o"
-	/home/sl_chen/.local/cuda-13.2.2/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/usr/bin/g++ $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o -MF CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o.d -x cu -c /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu -o CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o"
+	/home/sl_chen/.local/cuda-13.2.2/bin/nvcc -forward-unknown-to-host-compiler -ccbin=/usr/bin/g++ $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o -MF CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o.d -x cu -c /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu -o CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o
 
 CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.i"
@@ -116,7 +116,7 @@ reduction: CMakeFiles/reduction.dir/compiler_depend.ts
 reduction: /home/sl_chen/.local/cuda-13.2.2/lib/libcudart_static.a
 reduction: /usr/lib/x86_64-linux-gnu/librt.a
 reduction: CMakeFiles/reduction.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable reduction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable reduction"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reduction.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/reduction.dir/clean:
 .PHONY : CMakeFiles/reduction.dir/clean
 
 CMakeFiles/reduction.dir/depend:
-	cd /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001 /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001 /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/CMakeFiles/reduction.dir/DependInfo.cmake "--color=$(COLOR)" reduction
+	cd /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002 /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002 /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build /home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/build/CMakeFiles/reduction.dir/DependInfo.cmake "--color=$(COLOR)" reduction
 .PHONY : CMakeFiles/reduction.dir/depend
 

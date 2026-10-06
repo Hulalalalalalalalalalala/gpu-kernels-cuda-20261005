@@ -11,7 +11,7 @@ CUDA_FLAGS = -std=c++17 "--generate-code=arch=compute_120,code=[compute_120,sm_1
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common -isystem /home/sl_chen/.local/cuda-13.2.2/include -isystem /home/sl_chen/.local/cuda-13.2.2/include/cccl
+CXX_INCLUDES = -I/home/sl_chen/projects/gpu-kernels-cuda-20261005/a/task002/Common -isystem /home/sl_chen/.local/cuda-13.2.2/include -isystem /home/sl_chen/.local/cuda-13.2.2/include/cccl
 
 CXX_FLAGS = -std=gnu++17
 
