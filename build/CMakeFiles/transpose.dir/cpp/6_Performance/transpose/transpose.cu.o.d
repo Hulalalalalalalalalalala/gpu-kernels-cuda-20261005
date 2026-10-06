@@ -1,4 +1,4 @@
-CMakeFiles/transpose.dir/cpp/6_Performance/transpose/transpose.cu.o : /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/6_Performance/transpose/transpose.cu \
+CMakeFiles/transpose.dir/cpp/6_Performance/transpose/transpose.cu.o : /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/cpp/6_Performance/transpose/transpose.cu \
     /usr/include/stdc-predef.h \
     /home/sl_chen/.local/cuda-13.2.2/include/cuda_runtime.h \
     /home/sl_chen/.local/cuda-13.2.2/include/crt/host_config.h \
@@ -592,8 +592,8 @@ CMakeFiles/transpose.dir/cpp/6_Performance/transpose/transpose.cu.o : /home/sl_c
     /home/sl_chen/.local/cuda-13.2.2/include/cccl/cuda/std/__atomic/api/reference.h \
     /home/sl_chen/.local/cuda-13.2.2/include/cooperative_groups/details/partitioning.h \
     /home/sl_chen/.local/cuda-13.2.2/include/cooperative_groups/details/invoke.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_cuda.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_string.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_cuda.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_string.h \
     /usr/include/c++/15/fstream \
     /usr/include/c++/15/istream \
     /usr/include/c++/15/ios \
@@ -614,8 +614,8 @@ CMakeFiles/transpose.dir/cpp/6_Performance/transpose/transpose.cu.o : /home/sl_c
     /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
     /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
     /usr/include/c++/15/bits/fstream.tcc \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_image.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/exception.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_image.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/exception.h \
     /usr/include/c++/15/iostream \
     /usr/include/c++/15/sstream \
     /usr/include/c++/15/bits/sstream.tcc \

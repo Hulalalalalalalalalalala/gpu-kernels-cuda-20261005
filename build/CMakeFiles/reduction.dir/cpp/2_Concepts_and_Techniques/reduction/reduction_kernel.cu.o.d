@@ -1,4 +1,4 @@
-CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o : /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu \
+CMakeFiles/reduction.dir/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu.o : /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/cpp/2_Concepts_and_Techniques/reduction/reduction_kernel.cu \
     /usr/include/stdc-predef.h \
     /home/sl_chen/.local/cuda-13.2.2/include/cuda_runtime.h \
     /home/sl_chen/.local/cuda-13.2.2/include/crt/host_config.h \

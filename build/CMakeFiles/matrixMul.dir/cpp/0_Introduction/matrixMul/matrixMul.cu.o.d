@@ -1,4 +1,4 @@
-CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o : /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/0_Introduction/matrixMul/matrixMul.cu \
+CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o : /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/cpp/0_Introduction/matrixMul/matrixMul.cu \
     /usr/include/stdc-predef.h \
     /home/sl_chen/.local/cuda-13.2.2/include/cuda_runtime.h \
     /home/sl_chen/.local/cuda-13.2.2/include/crt/host_config.h \
@@ -225,13 +225,20 @@ CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o : /home/sl_
     /usr/include/c++/15/compare \
     /usr/include/c++/15/utility \
     /usr/include/c++/15/bits/stl_relops.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_cuda.h \
+    /usr/include/errno.h \
+    /usr/include/x86_64-linux-gnu/bits/errno.h \
+    /usr/include/linux/errno.h \
+    /usr/include/x86_64-linux-gnu/asm/errno.h \
+    /usr/include/asm-generic/errno.h \
+    /usr/include/asm-generic/errno-base.h \
+    /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_cuda.h \
     /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h \
     /usr/include/stdint.h \
     /usr/include/x86_64-linux-gnu/bits/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
     /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_string.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_string.h \
     /usr/include/c++/15/fstream \
     /usr/include/c++/15/istream \
     /usr/include/c++/15/ios \
@@ -288,13 +295,6 @@ CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o : /home/sl_
     /usr/include/c++/15/ext/string_conversions.h \
     /usr/include/c++/15/cstdio \
     /usr/include/c++/15/cerrno \
-    /usr/include/errno.h \
-    /usr/include/x86_64-linux-gnu/bits/errno.h \
-    /usr/include/linux/errno.h \
-    /usr/include/x86_64-linux-gnu/asm/errno.h \
-    /usr/include/asm-generic/errno.h \
-    /usr/include/asm-generic/errno-base.h \
-    /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
     /usr/include/c++/15/bits/charconv.h \
     /usr/include/c++/15/bits/basic_string.tcc \
     /usr/include/c++/15/bits/locale_classes.tcc \
@@ -321,8 +321,8 @@ CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o : /home/sl_
     /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
     /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
     /usr/include/c++/15/bits/fstream.tcc \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_functions.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/exception.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_functions.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/exception.h \
     /usr/include/c++/15/iostream \
     /usr/include/c++/15/sstream \
     /usr/include/c++/15/bits/sstream.tcc \
@@ -334,7 +334,7 @@ CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o : /home/sl_
     /usr/include/c++/15/bits/stl_tempbuf.h \
     /usr/include/c++/15/pstl/glue_algorithm_defs.h \
     /usr/include/c++/15/pstl/execution_defs.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_image.h \
-    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/Common/helper_timer.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_image.h \
+    /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/Common/helper_timer.h \
     /usr/include/x86_64-linux-gnu/sys/time.h \
     /usr/include/c++/15/ctime

@@ -135,7 +135,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/sl_chen/.local/share/uv/tools/cmake/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/Platform/Linux-NVIDIA-CUDA.cmake"
   "/home/sl_chen/.local/share/uv/tools/cmake/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/Platform/Linux.cmake"
   "/home/sl_chen/.local/share/uv/tools/cmake/lib/python3.12/site-packages/cmake/data/share/cmake-4.4/Modules/Platform/UnixPaths.cmake"
-  "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/CMakeLists.txt"
+  "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/CMakeLists.txt"
   "CMakeFiles/4.4.3/CMakeCUDACompiler.cmake"
   "CMakeFiles/4.4.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.3/CMakeSystem.cmake"

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/cpp/0_Introduction/matrixMul/matrixMul.cu" "CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o" "gcc" "CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o.d"
+  "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/cpp/0_Introduction/matrixMul/matrixMul.cu" "CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o" "gcc" "CMakeFiles/matrixMul.dir/cpp/0_Introduction/matrixMul/matrixMul.cu.o.d"
   "" "matrixMul" "gcc" "CMakeFiles/matrixMul.dir/link.d"
   )
 

@@ -1,54 +1,196 @@
-Start testing: Oct 05 18:23 CST
+Start testing: Oct 06 22:13 CST
 ----------------------------------------------------------
-1/7 Testing: vectorAdd_gpu
-1/7 Test: vectorAdd_gpu
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/vectorAdd"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"vectorAdd_gpu" start time: Oct 05 18:23 CST
+1/13 Testing: vectorAdd_gpu
+1/13 Test: vectorAdd_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/vectorAdd"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"vectorAdd_gpu" start time: Oct 06 22:13 CST
 Output:
 ----------------------------------------------------------
 Unified Memory: CPU and GPU answers match
 <end of output>
-Test time =   0.52 sec
+Test time =   0.22 sec
 ----------------------------------------------------------
 Test Passed.
-"vectorAdd_gpu" end time: Oct 05 18:23 CST
+"vectorAdd_gpu" end time: Oct 06 22:13 CST
 "vectorAdd_gpu" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/7 Testing: matrixMul_gpu
-2/7 Test: matrixMul_gpu
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/matrixMul" "-wA=128" "-hA=128" "-wB=128" "-hB=128"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"matrixMul_gpu" start time: Oct 05 18:23 CST
+2/13 Testing: matrixMul_gpu
+2/13 Test: matrixMul_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-wA=128" "-hA=128" "-wB=128" "-hB=128"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_gpu" start time: Oct 06 22:13 CST
 Output:
 ----------------------------------------------------------
 [Matrix Multiply Using CUDA] - Starting...
 GPU Device 0: "Blackwell" with compute capability 12.0
 
 MatrixA(128,128), MatrixB(128,128)
+C = A * B with M=128, K=128, N=128
+Data mode: constant
 Computing result using CUDA Kernel...
 done
-Performance= 279.62 GFlop/s, Time= 0.015 msec, Size= 4194304 Ops, WorkgroupSize= 1024 threads/block
-Checking computed result for correctness: Result = PASS
+Performance= 46.58 GFlop/s, Time= 0.090 msec, Size= 4194304 Ops, WorkgroupSize= 1024 threads/block
+Computing double-precision CPU reference...
+Checking computed result for correctness: 
+Result = PASS
 
 NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
 <end of output>
-Test time =   0.82 sec
+Test time =   0.23 sec
 ----------------------------------------------------------
 Test Passed.
-"matrixMul_gpu" end time: Oct 05 18:23 CST
+"matrixMul_gpu" end time: Oct 06 22:13 CST
 "matrixMul_gpu" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/7 Testing: reduction_gpu
-3/7 Test: reduction_gpu
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/reduction" "--n=65536"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"reduction_gpu" start time: Oct 05 18:23 CST
+3/13 Testing: matrixMul_rect_gpu
+3/13 Test: matrixMul_rect_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-wA=100" "-hA=37" "-wB=53" "-hB=100"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_rect_gpu" start time: Oct 06 22:13 CST
 Output:
 ----------------------------------------------------------
-/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/reduction Starting...
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+MatrixA(100,37), MatrixB(53,100)
+C = A * B with M=37, K=100, N=53
+Data mode: constant
+Computing result using CUDA Kernel...
+done
+Performance= 4.37 GFlop/s, Time= 0.090 msec, Size= 392200 Ops, WorkgroupSize= 1024 threads/block
+Computing double-precision CPU reference...
+Checking computed result for correctness: 
+Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_rect_gpu" end time: Oct 06 22:13 CST
+"matrixMul_rect_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/13 Testing: matrixMul_mixed_gpu
+4/13 Test: matrixMul_mixed_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-wA=100" "-hA=37" "-wB=53" "-hB=100" "-data=mixed"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_mixed_gpu" start time: Oct 06 22:13 CST
+Output:
+----------------------------------------------------------
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+MatrixA(100,37), MatrixB(53,100)
+C = A * B with M=37, K=100, N=53
+Data mode: mixed
+Computing result using CUDA Kernel...
+done
+Performance= 4.67 GFlop/s, Time= 0.084 msec, Size= 392200 Ops, WorkgroupSize= 1024 threads/block
+Computing double-precision CPU reference...
+Checking computed result for correctness: 
+Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_mixed_gpu" end time: Oct 06 22:13 CST
+"matrixMul_mixed_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/13 Testing: matrixMul_tiny_gpu
+5/13 Test: matrixMul_tiny_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-wA=1" "-hA=1" "-wB=1" "-hB=1"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_tiny_gpu" start time: Oct 06 22:13 CST
+Output:
+----------------------------------------------------------
+[Matrix Multiply Using CUDA] - Starting...
+GPU Device 0: "Blackwell" with compute capability 12.0
+
+MatrixA(1,1), MatrixB(1,1)
+C = A * B with M=1, K=1, N=1
+Data mode: constant
+Computing result using CUDA Kernel...
+done
+Performance= 0.00 GFlop/s, Time= 0.029 msec, Size= 2 Ops, WorkgroupSize= 1024 threads/block
+Computing double-precision CPU reference...
+Checking computed result for correctness: 
+Result = PASS
+
+NOTE: The CUDA Samples are not meant for performance measurements. Results may vary when GPU Boost is enabled.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_tiny_gpu" end time: Oct 06 22:13 CST
+"matrixMul_tiny_gpu" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/13 Testing: matrixMul_bad_zero
+6/13 Test: matrixMul_bad_zero
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-wA=0" "-hA=64" "-wB=64" "-hB=64"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_bad_zero" start time: Oct 06 22:13 CST
+Output:
+----------------------------------------------------------
+Error: option -wA must be a positive integer, got '0'.
+[Matrix Multiply Using CUDA] - Starting...
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_bad_zero" end time: Oct 06 22:13 CST
+"matrixMul_bad_zero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/13 Testing: matrixMul_bad_k
+7/13 Test: matrixMul_bad_k
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-wA=64" "-hA=64" "-wB=64" "-hB=32"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_bad_k" start time: Oct 06 22:13 CST
+Output:
+----------------------------------------------------------
+Error: outer matrix dimensions must be equal. (64 != 32)
+[Matrix Multiply Using CUDA] - Starting...
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_bad_k" end time: Oct 06 22:13 CST
+"matrixMul_bad_k" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/13 Testing: matrixMul_bad_data
+8/13 Test: matrixMul_bad_data
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/matrixMul" "-data=unknown"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"matrixMul_bad_data" start time: Oct 06 22:13 CST
+Output:
+----------------------------------------------------------
+Error: unknown data mode 'unknown' (expected -data=constant or -data=mixed).
+[Matrix Multiply Using CUDA] - Starting...
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"matrixMul_bad_data" end time: Oct 06 22:13 CST
+"matrixMul_bad_data" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/13 Testing: reduction_gpu
+9/13 Test: reduction_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/reduction" "--n=65536"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"reduction_gpu" start time: Oct 06 22:13 CST
+Output:
+----------------------------------------------------------
+/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/reduction Starting...
 
 GPU Device 0: "Blackwell" with compute capability 12.0
 
@@ -60,25 +202,25 @@ Reducing array of type int
 256 threads (max)
 64 blocks
 
-Reduction, Throughput = 2.7145 GB/s, Time = 0.00010 s, Size = 65536 Elements, NumDevsUsed = 1, Workgroup = 256
+Reduction, Throughput = 5.3066 GB/s, Time = 0.00005 s, Size = 65536 Elements, NumDevsUsed = 1, Workgroup = 256
 
 GPU result = 8374433
 CPU result = 8374433
 
 Test passed
 <end of output>
-Test time =   0.92 sec
+Test time =   0.23 sec
 ----------------------------------------------------------
 Test Passed.
-"reduction_gpu" end time: Oct 05 18:23 CST
+"reduction_gpu" end time: Oct 06 22:13 CST
 "reduction_gpu" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/7 Testing: simpleStreams_gpu
-4/7 Test: simpleStreams_gpu
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--n=1000003" "--chunk=65536" "--streams=4" "--repeat=2"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"simpleStreams_gpu" start time: Oct 05 18:23 CST
+10/13 Testing: simpleStreams_gpu
+10/13 Test: simpleStreams_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/simpleStreams" "--n=1000003" "--chunk=65536" "--streams=4" "--repeat=2"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"simpleStreams_gpu" start time: Oct 06 22:13 CST
 Output:
 ----------------------------------------------------------
 [ CUDA Sample: Streams ]
@@ -87,25 +229,25 @@ GPU Device 0: with compute capability 12.0 and Number of SMs 60
 
 n=1000003 chunk=65536 streams=4 repeat=2
 
-Round 0 Single stream: 1000003 elements PASS (16.812 ms)
-Round 0 Multi-stream: 1000003 elements PASS (6.917 ms)
-Round 0 Speedup: 2.43x
-Round 1 Single stream: 1000003 elements PASS (7.117 ms)
-Round 1 Multi-stream: 1000003 elements PASS (3.767 ms)
-Round 1 Speedup: 1.89x
+Round 0 Single stream: 1000003 elements PASS (6.237 ms)
+Round 0 Multi-stream: 1000003 elements PASS (2.756 ms)
+Round 0 Speedup: 2.26x
+Round 1 Single stream: 1000003 elements PASS (5.207 ms)
+Round 1 Multi-stream: 1000003 elements PASS (4.225 ms)
+Round 1 Speedup: 1.23x
 <end of output>
-Test time =   0.66 sec
+Test time =   0.27 sec
 ----------------------------------------------------------
 Test Passed.
-"simpleStreams_gpu" end time: Oct 05 18:23 CST
+"simpleStreams_gpu" end time: Oct 06 22:14 CST
 "simpleStreams_gpu" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/7 Testing: simpleStreams_small_gpu
-5/7 Test: simpleStreams_small_gpu
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--n=1000" "--chunk=1048576" "--streams=8"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"simpleStreams_small_gpu" start time: Oct 05 18:23 CST
+11/13 Testing: simpleStreams_small_gpu
+11/13 Test: simpleStreams_small_gpu
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/simpleStreams" "--n=1000" "--chunk=1048576" "--streams=8"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"simpleStreams_small_gpu" start time: Oct 06 22:14 CST
 Output:
 ----------------------------------------------------------
 [ CUDA Sample: Streams ]
@@ -114,22 +256,22 @@ GPU Device 0: with compute capability 12.0 and Number of SMs 60
 
 n=1000 chunk=1048576 streams=8 repeat=1
 
-Round 0 Single stream: 1000 elements PASS (0.864 ms)
-Round 0 Multi-stream: 1000 elements PASS (0.307 ms)
-Round 0 Speedup: 2.82x
+Round 0 Single stream: 1000 elements PASS (0.511 ms)
+Round 0 Multi-stream: 1000 elements PASS (0.135 ms)
+Round 0 Speedup: 3.79x
 <end of output>
-Test time =   0.43 sec
+Test time =   0.26 sec
 ----------------------------------------------------------
 Test Passed.
-"simpleStreams_small_gpu" end time: Oct 05 18:23 CST
+"simpleStreams_small_gpu" end time: Oct 06 22:14 CST
 "simpleStreams_small_gpu" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/7 Testing: simpleStreams_bad_n
-6/7 Test: simpleStreams_bad_n
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--n=0"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"simpleStreams_bad_n" start time: Oct 05 18:23 CST
+12/13 Testing: simpleStreams_bad_n
+12/13 Test: simpleStreams_bad_n
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/simpleStreams" "--n=0"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"simpleStreams_bad_n" start time: Oct 06 22:14 CST
 Output:
 ----------------------------------------------------------
 Error: --n=0 is out of range [1, 1073741824]
@@ -137,15 +279,15 @@ Error: --n=0 is out of range [1, 1073741824]
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"simpleStreams_bad_n" end time: Oct 05 18:23 CST
+"simpleStreams_bad_n" end time: Oct 06 22:14 CST
 "simpleStreams_bad_n" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/7 Testing: simpleStreams_bad_limit
-7/7 Test: simpleStreams_bad_limit
-Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build/simpleStreams" "--chunk=16777216" "--streams=8"
-Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task001/build
-"simpleStreams_bad_limit" start time: Oct 05 18:23 CST
+13/13 Testing: simpleStreams_bad_limit
+13/13 Test: simpleStreams_bad_limit
+Command: "/home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build/simpleStreams" "--chunk=16777216" "--streams=8"
+Directory: /home/sl_chen/projects/gpu-kernels-cuda-20261005/b/task002/build
+"simpleStreams_bad_limit" start time: Oct 06 22:14 CST
 Output:
 ----------------------------------------------------------
 Error: 8*chunk*streams = 1073741824 bytes exceeds the 512 MiB device buffer limit; reduce --chunk or --streams
@@ -153,8 +295,8 @@ Error: 8*chunk*streams = 1073741824 bytes exceeds the 512 MiB device buffer limi
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"simpleStreams_bad_limit" end time: Oct 05 18:23 CST
+"simpleStreams_bad_limit" end time: Oct 06 22:14 CST
 "simpleStreams_bad_limit" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Oct 05 18:23 CST
+End testing: Oct 06 22:14 CST

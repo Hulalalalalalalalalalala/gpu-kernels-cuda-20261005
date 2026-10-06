@@ -1,8 +1,14 @@
-vectorAdd_gpu 1 0.521056
-matrixMul_gpu 1 0.824862
-reduction_gpu 1 0.922379
-simpleStreams_gpu 1 0.660826
-simpleStreams_small_gpu 1 0.431157
-simpleStreams_bad_n 1 0.00235728
-simpleStreams_bad_limit 1 0.00186487
+vectorAdd_gpu 2 0.109694
+matrixMul_gpu 2 0.116335
+matrixMul_rect_gpu 2 0.119658
+matrixMul_mixed_gpu 2 0.118573
+matrixMul_tiny_gpu 2 0.121388
+matrixMul_bad_zero 2 0.000564008
+matrixMul_bad_k 2 0.000469046
+matrixMul_bad_data 2 0.000466763
+reduction_gpu 2 0.116823
+simpleStreams_gpu 2 0.132868
+simpleStreams_small_gpu 2 0.129332
+simpleStreams_bad_n 2 0.00063795
+simpleStreams_bad_limit 2 0.000514493
 ---
